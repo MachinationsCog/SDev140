@@ -1,44 +1,45 @@
 from tkinter import *
-from tkinter.font import BOLD, Font
+from tkinter.font import BOLD,Font
 from PIL import ImageTk,Image
 
 root = Tk()
 root.title("Meal Suggester")
-root.iconbitmap('icons8-food-50.ico')
+root.iconbitmap('C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/icons8food50.ico')
 root.configure(background="#524c4c")
 root.geometry("450x450+500+500")
 root.resizable(width=False, height=False)
 
 
+
 #Defining dictionary
 
-dictOne = {"ChickenGreenBeansRice": ImageTk.PhotoImage(Image.open("images/cgr.png")),
-"ChickenGreenBeansPasta": ImageTk.PhotoImage(Image.open("images/cgp.png")),
-"ChickenGreenBeansPotatoes": ImageTk.PhotoImage(Image.open("images/cgpo.png")),
-"ChickenSpinachRice": ImageTk.PhotoImage(Image.open("images/csr.png")),
-"ChickenSpinachPasta": ImageTk.PhotoImage(Image.open("images/csp.png")),
-"ChickenSpinachPotatoes": ImageTk.PhotoImage(Image.open("images/cspo.png")),
-"ChickenCornRice": ImageTk.PhotoImage(Image.open("images/ccr.png")),
-"ChickenCornPasta": ImageTk.PhotoImage(Image.open("images/ccp.png")),
-"ChickenCornPotatoes": ImageTk.PhotoImage(Image.open("images/ccpo.png")),
-"BeefGreenBeansRice": ImageTk.PhotoImage(Image.open("images/bgr.png")),
-"BeefGreenBeansPasta": ImageTk.PhotoImage(Image.open("images/bgp.png")),
-"BeefGreenBeansPotatoes": ImageTk.PhotoImage(Image.open("images/bgpo.png")),
-"BeefSpinachRice": ImageTk.PhotoImage(Image.open("images/bsr.png")),
-"BeefSpinachPasta": ImageTk.PhotoImage(Image.open("images/bsp.png")),
-"BeefSpinachPotatoes": ImageTk.PhotoImage(Image.open("images/bspo.png")),
-"BeefCornRice": ImageTk.PhotoImage(Image.open("images/bcr.png")),
-"BeefCornPasta": ImageTk.PhotoImage(Image.open("images/bcp.png")),
-"BeefCornPotatoes": ImageTk.PhotoImage(Image.open("images/bcpo.png")),
-"PorkGreenBeansRice": ImageTk.PhotoImage(Image.open("images/pgr.png")),
-"PorkGreenBeansPasta": ImageTk.PhotoImage(Image.open("images/pgp.png")),
-"PorkGreenBeansPotatoes": ImageTk.PhotoImage(Image.open("images/pgpo.png")),
-"PorkSpinachRice": ImageTk.PhotoImage(Image.open("images/psr.png")),
-"PorkSpinachPasta": ImageTk.PhotoImage(Image.open("images/psp.png")),
-"PorkSpinachPotatoes": ImageTk.PhotoImage(Image.open("images/pspo.png")),
-"PorkCornRice": ImageTk.PhotoImage(Image.open("images/pcr.png")),
-"PorkCornPasta" : ImageTk.PhotoImage(Image.open("images/pcp.png")),
-"PorkCornPotatoes": ImageTk.PhotoImage(Image.open("images/pcpo.png"))}
+dictOne = {"ChickenGreenBeansRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/cgr.png")),
+"ChickenGreenBeansPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/cgp.png")),
+"ChickenGreenBeansPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/cgpo.png")),
+"ChickenSpinachRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/csr.png")),
+"ChickenSpinachPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/csp.png")),
+"ChickenSpinachPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/cspo.png")),
+"ChickenCornRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/ccr.png")),
+"ChickenCornPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/ccp.png")),
+"ChickenCornPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/ccpo.png")),
+"BeefGreenBeansRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bgr.png")),
+"BeefGreenBeansPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bgp.png")),
+"BeefGreenBeansPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bgpo.png")),
+"BeefSpinachRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bsr.png")),
+"BeefSpinachPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bsp.png")),
+"BeefSpinachPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bspo.png")),
+"BeefCornRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bcr.png")),
+"BeefCornPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bcp.png")),
+"BeefCornPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/bcpo.png")),
+"PorkGreenBeansRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pgr.png")),
+"PorkGreenBeansPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pgp.png")),
+"PorkGreenBeansPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pgpo.png")),
+"PorkSpinachRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/psr.png")),
+"PorkSpinachPasta": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/psp.png")),
+"PorkSpinachPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pspo.png")),
+"PorkCornRice": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pcr.png")),
+"PorkCornPasta" : ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pcp.png")),
+"PorkCornPotatoes": ImageTk.PhotoImage(Image.open("C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/images/pcpo.png"))}
 
 
 
@@ -48,14 +49,14 @@ def GetMeal():
     va=(meat.get() + veg1.get() + veg2.get())
     top = Toplevel()
     top.title("Suggested Meal")
-    top.iconbitmap('icons8-food-50.ico')
+    top.iconbitmap('C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/icons8food50.ico')
     myImage = dictOne[va]
     dictlabel = Label(top, image=myImage).pack()
 
 def About():
     top2 = Toplevel()
     top2.title("About")
-    top2.iconbitmap('icons8-food-50.ico')
+    top2.iconbitmap('C:/Users/thech/Desktop/SDEV140 Intro to Software Dev/Final Project/icons8food50.ico')
     about_label=Label(top2, text = "Meal Suggester \n Created by John Hessong - October/2021",padx=100, pady=200, background="#524c4c").pack()
 
 
